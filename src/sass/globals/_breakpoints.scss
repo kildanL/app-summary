@@ -1,5 +1,12 @@
 @use "../abstracts/" as a;
 
+@media screen and (min-width: 993px) {
+    .container {
+        margin-left: a.$mb-1-5;
+        margin-right: a.$mb-1-5;
+    }
+}
+
 /* For large devices */
 @media screen and (max-width: 992px) {
     .container {
