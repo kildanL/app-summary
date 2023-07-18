@@ -1,0 +1,22 @@
+@use "../abstracts/" as a;
+
+h1,
+h2,
+h3 {
+    color: a.$title-color;
+    font-weight: a.$font-semi-bold;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: a.$body-font;
+    font-size: a.$normal-font-size;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
