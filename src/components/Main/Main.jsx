@@ -2,6 +2,7 @@ import React from "react";
 import st from "./Main.module.scss";
 import Social from "./Social";
 import Data from "./Data";
+import ScrollDown from "./ScrollDown";
 
 export default function Main() {
     return (
@@ -9,9 +10,10 @@ export default function Main() {
             <div className={`${st.home__container} container grid`}>
                 <div className={`${st.home__content} grid`}>
                     <Social />
-                    <Data />
                     <div className={`${st.home__img}`}></div>
+                    <Data />
                 </div>
+                <ScrollDown />
             </div>
         </section>
     );

@@ -16,6 +16,11 @@ body {
     font-family: a.$body-font;
 }
 
+#root {
+    max-width: 1260px;
+    margin: auto;
+}
+
 ul {
     list-style: none;
 }
