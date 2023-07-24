@@ -6,7 +6,7 @@ import ScrollDown from "./ScrollDown";
 
 export default function Main() {
     return (
-        <section className={`${st.home} section`} id="home">
+        <section className={`${st.home} section`} id="main">
             <div className={`${st.home__container} container grid`}>
                 <div className={`${st.home__content} grid`}>
                     <Social />

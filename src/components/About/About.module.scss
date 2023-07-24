@@ -91,4 +91,8 @@
     .about__info {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .about__box-3 {
+        grid-column: 1/3;
+    }
 }

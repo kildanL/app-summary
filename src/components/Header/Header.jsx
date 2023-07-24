@@ -14,7 +14,7 @@ export default function Header() {
         <>
             <header className={st.header}>
                 <nav className={`${st.nav} container`}>
-                    <a href="#" className={st.nav__logo}>
+                    <a href="#main" className={st.nav__logo}>
                         Kutleev
                     </a>
 

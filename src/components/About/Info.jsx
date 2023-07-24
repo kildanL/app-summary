@@ -19,7 +19,7 @@ export default function Info() {
                 <span className={`${st.about__subtitle}`}>2 проекта</span>
             </div>
 
-            <div className={`${st.about__box}`}>
+            <div className={`${st.about__box} ${st["about__box-3"]}`}>
                 <HiOutlineStatusOnline className={`${st.about__icon}`} />
                 <h3 className={`${st.about__title}`}>Онлайн</h3>
                 <span className={`${st.about__subtitle}`}>24/7</span>
