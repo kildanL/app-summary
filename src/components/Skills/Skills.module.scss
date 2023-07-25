@@ -1,0 +1,58 @@
+@use "../../sass/abstracts/" as a;
+
+.skills__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__content {
+    background-color: a.$container-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+    max-width: 350px;
+}
+
+.skills__title {
+    font-size: a.$normal-font-size;
+    font-weight: a.$font-medium;
+    text-align: center;
+    margin-bottom: a.$mb-1-5;
+}
+
+.skills__box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.skills__group {
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skills__data {
+    display: flex;
+    column-gap: 0.5rem;
+    // flex-wrap: wrap;
+}
+
+.skills .badge {
+    font-size: 1rem;
+    color: a.$title-color;
+}
+
+.skills__name {
+    font-size: a.$normal-font-size;
+    font-weight: a.$font-semi-bold;
+    line-height: 18px;
+}
+
+@media screen and (max-width: 576px) {
+    .skills__content {
+        padding: 1rem 2rem;
+    }
+}
