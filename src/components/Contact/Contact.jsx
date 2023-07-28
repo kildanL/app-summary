@@ -27,8 +27,6 @@ export default function Contact() {
 
             <div className={`${st.contact__container} container grid`}>
                 <div className={`${st.contact__content}`}>
-                    <h3 className={`${st.contact__title}`}></h3>
-
                     <div className={`${st.contact__info}`}>
                         <div className={`${st.contact__card}`}>
                             <HiOutlineMail
