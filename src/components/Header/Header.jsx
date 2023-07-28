@@ -9,6 +9,7 @@ import { GrFormClose } from "react-icons/gr";
 export default function Header() {
     //show menu
     const [isToggleMenu, setIsToggleMenu] = useState(false);
+    const [activeNav, setActiveNav] = useState("#main");
 
     return (
         <>
@@ -29,14 +30,27 @@ export default function Header() {
                             <li className="nav__item">
                                 <a
                                     href="#main"
-                                    className={`${st.nav__link} ${st["active-link"]}`}
+                                    onClick={() => setActiveNav("#main")}
+                                    className={
+                                        activeNav === "#main"
+                                            ? `${st.nav__link} ${st["active-link"]}`
+                                            : `${st.nav__link}`
+                                    }
                                 >
                                     <AiOutlineHome className={st.nav__icon} />{" "}
                                     Главная
                                 </a>
                             </li>
                             <li className="nav__item">
-                                <a href="#about" className={`${st.nav__link} `}>
+                                <a
+                                    href="#about"
+                                    onClick={() => setActiveNav("#about")}
+                                    className={
+                                        activeNav === "#about"
+                                            ? `${st.nav__link} ${st["active-link"]}`
+                                            : `${st.nav__link}`
+                                    }
+                                >
                                     <RxAvatar className={st.nav__icon} /> Обо
                                     мне
                                 </a>
@@ -44,7 +58,12 @@ export default function Header() {
                             <li className="nav__item">
                                 <a
                                     href="#hard-skills"
-                                    className={`${st.nav__link} `}
+                                    onClick={() => setActiveNav("#hard-skills")}
+                                    className={
+                                        activeNav === "#hard-skills"
+                                            ? `${st.nav__link} ${st["active-link"]}`
+                                            : `${st.nav__link}`
+                                    }
                                 >
                                     <AiOutlineFileDone
                                         className={st.nav__icon}
@@ -55,25 +74,40 @@ export default function Header() {
                             <li className="nav__item">
                                 <a
                                     href="#services"
-                                    className={`${st.nav__link} `}
+                                    onClick={() => setActiveNav("#services")}
+                                    className={
+                                        activeNav === "#services"
+                                            ? `${st.nav__link} ${st["active-link"]}`
+                                            : `${st.nav__link}`
+                                    }
                                 >
                                     <BiBriefcaseAlt2 className={st.nav__icon} />
                                     Услуги
                                 </a>
                             </li>
-                            <li className="nav__item">
+                            {/* <li className="nav__item">
                                 <a
                                     href="#portfolio"
-                                    className={`${st.nav__link} `}
+                                    onClick={() => setActiveNav("#porfolio")}
+                                    className={
+                                        activeNav === "#portfolio"
+                                            ? `${st.nav__link} ${st["active-link"]}`
+                                            : `${st.nav__link}`
+                                    }
                                 >
                                     <FiImage className={st.nav__icon} />
                                     Портфолио
                                 </a>
-                            </li>
+                            </li> */}
                             <li className="nav__item">
                                 <a
-                                    href="#contacts"
-                                    className={`${st.nav__link} `}
+                                    href="#contact"
+                                    onClick={() => setActiveNav("#contact")}
+                                    className={
+                                        activeNav === "#contact"
+                                            ? `${st.nav__link} ${st["active-link"]}`
+                                            : `${st.nav__link}`
+                                    }
                                 >
                                     <BiMessageSquareDetail
                                         className={st.nav__icon}
