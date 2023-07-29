@@ -21,7 +21,7 @@ export default function About() {
                     </p>
 
                     <a
-                        href="https://drive.google.com/file/d/1EG-jN-d0eGKPeuUIqVoR9EcYwdc9GE0t/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1rpK6Yi9PShicd2V98CG6WeqBNXBUcnmx/view"
                         className="button button--flex"
                         target="_blank"
                         rel="noopener noreferrer"
